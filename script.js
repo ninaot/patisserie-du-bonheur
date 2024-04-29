@@ -22,12 +22,42 @@ function addProducts(data) {
 document.querySelector("#user").innerHTML += 
     ` 
     
-    <div>
+    <div class="absolute">
     
-      <h1 class="titre">${data.entreprise.nomCommercial}</h1>
+      <h1 class="titre">${data.entreprise.nomCommercial}  </h1>
       <p> ${data.entreprise.phraseAccroche}</p>
                 <a href="">${data.entreprise.texteAppelAction}</a>
     </div>`
-      
+  
+  }
+
+ /* let avantage = "";
+
+function clients(avantagesclients) {
+    avantagesclients.forEach(element => {
+        avantage += `
+            <h2>${data.entreprise.avantagesclients}</h2>
+            <p>${entreprise.element}</p>
+            <p></p>
+            <p></p>
+        `;
+    });
+    document.querySelector("#large").innerHTML += avantage;
+}
+   */
+
+const avantagesclients=[0]
+ avantagesclients=document.createElement(h2)
+
    
-}  
+    
+    
+    
+    
+  
+  
+   
+
+
+
+
