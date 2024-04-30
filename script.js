@@ -12,6 +12,8 @@ fetch("patisseries.json")
     addProducts(data);
     clients(data.entreprise.avantagesClients)
     douce(data.entreprise.produits)
+    cours(data.entreprise.services)
+    avis(data.entreprise.temoignages)
   });
 
 // Cette fonction prend les données JSON en entrée et effectue une action sur celles-ci
@@ -46,6 +48,7 @@ function clients(avantagesclients) {let avantage = "";
     });
     document.querySelector("#large").innerHTML += avantage;
 }
+
   /*partie des produits avec les images et description*/
 function douce(produits){ 
   let douceur="";
@@ -53,7 +56,7 @@ function douce(produits){
     douceur+=`
       <div class="card">
             <h3>${tarte.nom}</h3>
-            <img src="${tarte.images}" alt="">
+           <div class="limite"> <img src="${tarte.images}" alt=""></div>
             <p>${tarte.description}</p>
         </div>
     
@@ -63,7 +66,40 @@ function douce(produits){
   document.querySelector("#carte").innerHTML += douceur;
 }
 
+/*partie des services */
+function cours(services){
+  let traiteur="";
+  services.forEach(gateau => {
+    traiteur+=`
+    <div class="carte-service">
+    <h3>${gateau.nom}</h3>
+    <img src="${gateau.image}" alt="">
+    <p>${gateau.description}</p>
+    <a href="">Réservez</a>
+    </div>
+    `
+    
+  });
+  document.querySelector("#pflex").innerHTML += traiteur;
+}
+/*partie des témoignages*/
+function avis(temoignages){
+  let notes=""
+  temoignages.forEach(element => {
+    notes+=`
+    <div class="carte-temoin">
+    <h3>${element.prenom}</h3>
+    <p>${element.typeExperience}</p>
+    <p>${element.commentaire}</p>
+    <p>${element.note}</p>
 
+</div>
+    
+    `
+    
+  });
+  document.querySelector("#bflex").innerHTML +=notes ;
+}
    
     
     
