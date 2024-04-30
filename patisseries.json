@@ -1,6 +1,6 @@
 {
     "entreprise": {
-        "nomCommercial": "TouBon - Pâtisserie à Auxerre",
+        "nomCommercial": "TouBon Pâtisserie à Auxerre",
         "phraseAccroche": "Succombez à la délicatesse sucrée avec TouBon, votre pâtisserie gourmande à Auxerre",
         "texteAppelAction": "Découvrez nos créations",
         "avantagesClients": [
@@ -33,7 +33,12 @@
                 "nom": "Chausson aux Pommes",
                 "description": "Retrouvez le plaisir réconfortant de notre chausson aux pommes. Une pâte feuilletée croustillante et une garniture généreuse aux pommes fondantes.",
               "images":"https://cdn.glitch.global/34823477-3d93-4a38-aaf6-ceb2b1fd2fa9/chausson-pomme.webp?v=1714150241823"
-            }
+            },
+            {
+              "nom": "Tarte au citron meringuée",
+              "description": "La tarte au citron meringuée, symphonie gustative en trois mouvements, marie la fraîcheur piquante du citron avec la douceur aérienne de la meringue.",
+            "images":"https://cdn.glitch.global/34823477-3d93-4a38-aaf6-ceb2b1fd2fa9/IMG20240416194617.jpg?v=1714473050058"
+          }
         ],
         "services": [
             {
