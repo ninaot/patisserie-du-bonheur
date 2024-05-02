@@ -1,50 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Josefin+Sans&family=Karla&family=League+Spartan&family=Prata&family=Quicksand&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik&display=swap');
+
 * {
+  font-family:  "Quicksand", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
+    text-transform: capitalize;
+    transition: 2s linear;
+
+}
+
+main {
+  background-image: url(./assets/Pink\ Pastel\ Cute\ Flower\ Aesthetic\ Background\ Instagram\ Story.png);
 }
 
 header {
-  background-color: antiquewhite;
+  background-color:white;
   padding-top: 10px;
   align-items: center;
   margin: auto;
   justify-content: center;
-  position: sticky;
+  position:sticky;
+  top: 0;
+
 }
 
 .flex {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+
+  
 }
 
 .flex ul {
   display: flex;
   justify-content: space-between;
   width: 50%;
-  margin-left: 300px;
+  margin-left: 200px;
   margin-top: 20px;
+
 }
 .flex ul li {
   list-style-type: none;
   gap: 10px;
-
-  padding-bottom: 30px;
-  font-family: "League Spartan", sans-serif;
+ color: black;
   text-transform: uppercase;
+  cursor: pointer;
+  margin-right: 80px;
+  
+}
+.flex ul li:hover{
+  border: solid 1px black;
+  padding: 10px;
+}
+
+.flex i{
+  font-size: large;
+  color: black;
+ margin-left: 20px;
 }
 .flex img {
-  width: 70px;
+  width: 100px;
 }
 #user {
   position: relative;
 }
 #user img {
   width: 100%;
-  height: 500px;
+  height: 600px;
 
-  object-fit: cover;
+  object-fit:cover;
   margin-bottom: 50px;
   opacity: 1;
 }
@@ -55,144 +82,253 @@ header {
   transform: translate(-50%, -50%);
 }
 .absolute h1 {
-  font-family: "League Spartan", sans-serif;
-  font-size: 80px;
-  color: #a1eebd;
-  text-align: center;
-  text-shadow: 1px 1px 2px #ef9595, 0 0 1em rgb(255, 0, 234), 0 0 0.2em #00d5ff;
+  
+  font-size: 60px;
+  color: hsl(150, 4%, 9%);
+  margin-bottom: 10px;
+  
+
+  cursor: pointer;
 }
 h1:hover {
-  color: #ef9595;
+  font-size: 60px;
+  color:chocolate;
+  transform: scale(1.15);
 }
 .absolute p {
-  color: hsl(240, 42%, 22%);
+  color: hwb(240 4% 94%);
   font-size: 30px;
-  font-family: "League Spartan", sans-serif;
-  margin-bottom: 30px;
+  
+  margin:20px 500px 20px 0;
 }
 .absolute a {
   border: solid #bebdf7;
-  text-decoration: none;
+
   padding: 20px;
   border-radius: 25px;
-  background-color: #caedff;
-  font-family: "League Spartan", sans-serif;
+  background-color:black;
+ color:white;
   font-weight: 800;
-  margin-left: 160px;
+  margin-left: 200px;
+margin-bottom: 100px;
+  transition-duration: 400ms;
 }
-a:hover {
-  background-color: #ffc7ea;
+.absolute a:hover {
+  background-color:transparent
+  ; color:black;
+  transform: scale(1.15);
+  font-weight: bold;
+  font-size: large;
+}
+.titre{
+ margin-right: 600px; 
+ margin-bottom: 30px;
 }
 #large {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap:30px;
+  gap: 30px;
   padding: 0 10%;
 }
 
 #large p {
-  background-color: hwb(309 74% 13%);
+  background-color: #babbfb;
   width: 20%;
   padding: 40px 40px;
-  border-color: #ef9595;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #23031e;
-  font-weight: 700;
-  
-
-
+ 
+  color: hwb(305 1% 95%);
+  font-weight: 800;
+  text-align: center;
+  border-radius: 100px;
+  cursor: pointer;
+}
+#large p:hover {
+  background-color: rgb(191, 167, 196);
+  color:white;
+  font-size: 20px;
 }
 #carte {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  margin-bottom: 50px;
-  margin-top: 30px;
+  margin-bottom: 70px;
+   margin-top: 20px;
+  background-image: url(./assets/Pink\ Pastel\ Cute\ Flower\ Aesthetic\ Background\ Instagram\ Story.png);
 }
-#carte h2{
-margin-bottom: 50px;
-width: 100%;
-height: 30px;
-text-align: center;
-font-family:  Roboto, Helvetica, Arial, Lucida, sans-serif;;
-font-size: 50px;
+#carte h2 {
+  margin-bottom: 30px;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+ text-transform: uppercase;
+  font-size: 40px;
+  
+
 
 }
 .card {
   width: 40%;
-  margin-left: 60px;
+  margin-left: 80px;
+  border: solid 2px beige;
+  background-color: hsl(0, 17%, 91%);
+  border-radius: 25px;
+  padding-bottom: 40px;
   
 }
 .card img {
   width: 100%;
-  height: 400px;
-  border-radius: 20px;
-  margin-top: 20px;
+  height: 300px;
+  border-radius: 50px;
+ 
   object-fit: cover;
   transition: all 0.5s;
+ 
   
 }
-.limite{
-    overflow: hidden;
-    height: 400px;
+.limite {
+  overflow: hidden;
+  height: 300px;
 }
-.card img:hover{
-        transform: scale(1.1);
-        margin-top: 20px;
-        margin-bottom: 20px;
+.card img:hover {
+  transform: scale(1.1);
+ 
+  border-radius:25px;
 }
 .card h3 {
-  font-family: Roboto, Helvetica, Arial, Lucida, sans-serif;
+ 
   margin-top: 10px;
   text-align: center;
+  margin-top: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 .card p {
-  font-family: Roboto, Helvetica, Arial, Lucida, sans-serif;
+ margin-top: 30px;
   font-size: large;
+margin-bottom: 70px;
+text-align: center;
+}
+.cardbtn{
+  
+  color :white;
+  padding: 8px 16px;
+  font-weight: bold;
+  border:1px solid black;
+  background-color: black;
+  text-transform: uppercase;
+  font-size: large;
+  font-weight: bolder;
 
 }
-#pflex{width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-   gap:30px;
-    margin-bottom: 50px;
-    margin-top: 30px;
-    margin-left: 70px;
+.cardbtn :hover{
+  background-color:transparent;
+  color: hsl(180, 21%, 6%);
+}
+#pflex {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-content: center;
+gap: 30px;
+ 
+ 
+  
+  
   
 }
-.carte-service{width: 20%;
-    margin-left: 50px;
+.carte-service {
+  width: 20%;
+  margin-left: 50px;
+  background-color:hsl(36, 24%, 92%);
 
-   
 }
-.carte-service img{
-    width: 100%;
+.carte-service img {
+  width: 100%;
   height: 300px;
-  border-radius: 20px;
-  margin-top: 10px;
-  margin-left: 40px;
+  
   object-fit: cover;
+  
 }
 
-#pflex h2{ margin-bottom: 50px;
-    width: 100%;
-    margin-right: 60px;
-    text-align: center;
-    font-family:  Roboto, Helvetica, Arial, Lucida, sans-serif;;
-    font-size: 50px;
+#pflex h2 {
+  margin-bottom: 50px;
+  width: 100%;
+  margin-right: 60px;
+  text-align: center;
+ text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 700;
+}
+.carte-service p {
 
+ text-align: center;
+margin-top: 20px;
+  margin-bottom: 20px;
+  
+ 
 }
-.carte-service p{
-    font-family: Roboto, Helvetica, Arial, Lucida, sans-serif;
-  font-size: large;
-  margin-left: 60px;
-  margin-bottom: 10px;
-}
-.carte-service h3{
-    font-family: Roboto, Helvetica, Arial, Lucida, sans-serif;
+.carte-service h3 {
+
   margin-top: 10px;
   text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.carte-service a{
+  background-color: black;
+  color: aliceblue;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 8px 15px;
+
+}
+#bflex{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-content: center;
+margin-top: 50px; 
+gap: 30px;
+}
+.carte-temoin{
+  width: 30%; background-color: #f3f1ee;
+  border-radius: 20px;
+  padding: 50px;
+  box-shadow: 8px 5px;
+ 
+}
+#bflex h2{margin-bottom: 30px;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+ text-transform: uppercase;
+  font-size: 40px;
+ 
+
+}
+.carte-temoin h3{
+  text-align: center;
+  font-size: large;
+  margin-bottom: 10px;
+}
+.carte-temoin i{
+font-size: 30px;
+  
+}
+.carte-temoin h4{
+  font-size:30px ;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+#map{
+  height: 300px;
+  margin-top: 190px;
+  margin-left: 50%;
+  margin-right: 30px;
 }

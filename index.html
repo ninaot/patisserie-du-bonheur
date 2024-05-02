@@ -1,57 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="style.css" />
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
+
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <title>Document</title>
-</head>
-<body>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <title>La pâtisserie TOUBON</title>
+  </head>
+  <body>
     <header>
-        <nav class="flex">
-            <img src="./assets/logo-patissier-1.png" alt="" >
-            <ul>
-                <li>Produits</li>
-                <li>Services</li>
-                <li>Avantages clients</li>
-                <li>Contact</li>
-            </ul>
-        </nav>
+      <nav class="flex">
+        <a href=""><img src="./assets/Logo Boulangerie Playful Rose(1)(1).png" alt="logo toubon" /></a>
+        <ul>
+         <a href=""> <li>Produits</li></a>
+         <a href="">  <li>Services</li></a>
+         <a href=""> <li>Avantages clients</li></a>
+         <a href="">  <li>Contact</li></a>
+         <a href=""><i class="fa-regular fa-user" ></i></a>
+         <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+        </ul>
+      </nav>
     </header>
     <main>
-        <!--section nom de l'entreprise -->
-        <section id="user">
-            <img src="./assets/bleuentrmet.jpg" alt="">
-                
-            
-        </section>
-   
-    <!--la partie des avantages clients-->
-    <div id="large" data-aos="fade-right">
-        
-        
-    </div>
-    <section id="carte">
+      <!--section nom de l'entreprise -->
+      <section id="user">
+        <img src="./assets/gateauchocolatmacaron (5).png" alt="" />
+      </section>
+
+      <!--la partie des avantages clients-->
+      <div id="large" ></div>
+      <section id="carte">
         <!--section des produits-->
-        <h2>Produits</h2>
-    </section>
-<!--partie des services-->
-    
-<div id="pflex">
+        <h2>Créations de saison</h2>
+      </section>
+      <!--partie des services-->
 
+      <div id="pflex">
         <h2>Services</h2>
-    </div>
+      </div>
 
-    <!--parties des témoignages-->
-<section id="bflex">
-    
-</section>
+      <!--parties des témoignages-->
+      <section id="bflex">
+        <h2>Avis de nos clients</h2>
+      </section>
+      <section>
+        <h2>adresse</h2>
+        <div id="map"></div>
+      </section>
+      
+    </main>
+    <footer>
+<div>
+  
+    <nav class="navfooter1">
+     <h4></h4>
+     <ul>
+         <a href=""><li>FAQ/contactez nous</li></a>
+         <a href=""><li>mentions legales</li></a>
+         <a href=""><li>respect de votre vie privee</li></a>
+         <a href=""><li>OGU et CGV</li></a>
+     </ul>
 
-</main>
+    </nav>
+</div>
+<nav class=navfooter2>
+  <h4>Infos</h4>
+
+  <ul>
+      <a href=""><li>actualités</li></a>
+      <a href=""><li>agenda</li></a>
+      <a href=""><li>dossiers</li></a>
+      <a href=""><li></li></a>
+
+  </ul>
+</nav>
+
+    </footer>
     <script src="script.js" defer></script>
-</body>
+  </body>
 </html>
