@@ -40,8 +40,13 @@ function clients(avantagesclients) {
   let avantage = "";
   avantagesclients.forEach((element) => {
     avantage += `
-           
-            <p>${element}</p>
+            
+
+            <div>
+            <img src="./assets/${element.picto}"alt="">
+            <p>${element.texte}</p>
+            
+            </div>
             
         `;
   });
@@ -57,9 +62,17 @@ function douce(produits) {
            
            <div class="limite"> <img src="${tarte.images}" alt=""></div>
            <h3>${tarte.nom}</h3>
-            <p>${tarte.description}</p>
-            <a href="" class="cardbtn">Commander</a>
+           <div class="carte1">
            
+           <p>${tarte.description}</p>
+           <a href="" class="cardbtn">Commander</a>
+           <div class="btn1">
+           <a href="" class="clic"><i class="fa-solid fa-shop"></i> click&collect</a> 
+           <a href="" class="clic"><i class="fa-solid fa-truck-fast"></i>livraison</a> 
+           </div>
+           </div>
+           
+            
         </div>
     
     `;
@@ -104,25 +117,25 @@ function avis(temoignages) {
   document.querySelector("#bflex").innerHTML += notes;
 }
 
+var map = L.map("map").setView([47.799999, 3.56667], 13);
 
-var map = L.map('map').setView([47.799999, 3.56667],13);
-
-L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  attribution:
+    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
 }).addTo(map);
 
-L.marker([47.7, 3.56667]).addTo(map)
-    .bindPopup('<h1>21 place Charles Lepère 89000 Auxerre</h1> ')
-    .openPopup();
+L.marker([47.7, 3.56667])
+  .addTo(map)
+  .bindPopup("<h1>21 place Charles Lepère 89000 Auxerre</h1> ")
+  .openPopup();
 
-
-    function etoile(note){
-      let chaine =""
-      for(let i=1; i<=note; i++){
-          chaine+="★"
-      }
-      for(let j=0; j<5-note;j++){
-          chaine+="☆"
-      }
-      return chaine 
+function etoile(note) {
+  let chaine = "";
+  for (let i = 1; i <= note; i++) {
+    chaine += "★";
   }
+  for (let j = 0; j < 5 - note; j++) {
+    chaine += "☆";
+  }
+  return chaine;
+}

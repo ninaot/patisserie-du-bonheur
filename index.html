@@ -1,93 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="stylesheet" href="style.css" />
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="style.css" />
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css" />
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <title>La pâtisserie TOUBON</title>
+</head>
+
+<body>
+  <header>
+    <nav class="flex">
+      <a href=""><img src="./assets/Logo Boulangerie Playful Rose(1)(1).png" alt="logo toubon" /></a>
+      <ul>
+        <a href="#carte">
+          <li>Produits</li>
+        </a>
+        <a href="#pflex">
+          <li>Services</li>
+        </a>
+        <a href="#map">
+          <li>informations</li>
+        </a>
+        <a href="">
+          <li>Contact</li>
+        </a>
+        <a href=""><i class="fa-regular fa-user"></i></a>
+        <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!--section nom de l'entreprise -->
+    <section id="user">
+      <img src="./assets/gateauchocolatmacaron (5).png" alt="" />
+    </section>
+
+    <!--la partie des avantages clients-->
+    <div id="large" data-aos="fade-left"></div>
+    <!--section des produits-->
+    <section id="carte">
+      <h2>Créations de saison</h2>
+    </section>
+    <!--partie des services-->
+
+    <div id="pflex">
+      <h2>Services</h2>
+    </div>
+
+    <!--parties des témoignages-->
+    <section id="bflex">
+      <h2>Avis de nos clients</h2>
+    </section>
+    <!--section map et l'adresse-->
+    <section class="info">
+      <h2>information pratique</h2>
+      <div class="flex center between">
+        <div class="adresse">
+
+          <h3>l'adresse de notre boutique</h3>
+          <address>21 place Charles Lepère <br />89000 Auxerre</address>
+          <p>Tel : 03 86 48 22 32</p>
+          <p>Du Lundi au Samedi de 6h00 à 19h00 <br>
+
+            Dimanche de 6h00 à 13h30</p>
+        </div>
 
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
-    <title>La pâtisserie TOUBON</title>
-  </head>
-  <body>
-    <header>
-      <nav class="flex">
-        <a href=""><img src="./assets/Logo Boulangerie Playful Rose(1)(1).png" alt="logo toubon" /></a>
+        <div id="map">
+
+        </div>
+      </div>
+    </section>
+    <form class="mail">
+      <h2>newsletter</h2>
+      <label for="email">Inscrivez-vous à notre newsletter pour recevoir nos actualités, offres commerciales et
+        invitations aux événements</label>
+
+      <input type="email" id="email" pattern=".+@example\.com" size="30" placeholder="saisissez votre adresse e-mail"
+        required />
+
+    </form>
+  </main>
+  <!--section footer-->
+  <footer>
+    <div>
+     
+      <nav class="navfooter1">
+        <h4>nos produits</h4>
         <ul>
-         <a href=""> <li>Produits</li></a>
-         <a href="">  <li>Services</li></a>
-         <a href=""> <li>Avantages clients</li></a>
-         <a href="">  <li>Contact</li></a>
-         <a href=""><i class="fa-regular fa-user" ></i></a>
-         <a href=""><i class="fa-solid fa-bag-shopping"></i></a>
+          <a href="">
+            <li>accueil</li>
+          </a>
+          <a href="">
+            <li>création</li>
+          </a>
+          <a href="">
+            <li>services</li>
+          </a>
+         
+          </a>
         </ul>
       </nav>
-    </header>
-    <main>
-      <!--section nom de l'entreprise -->
-      <section id="user">
-        <img src="./assets/gateauchocolatmacaron (5).png" alt="" />
-      </section>
+    </div>
+    <nav class="navfooter2">
+      <h4>Infos</h4>
 
-      <!--la partie des avantages clients-->
-      <div id="large"data-aos="fade-left" ></div>
-       <!--section des produits-->
-      <section id="carte">
-       
-        <h2>Créations de saison</h2>
-      </section>
-      <!--partie des services-->
-
-      <div id="pflex">
-        <h2>Services</h2>
-      </div>
-
-      <!--parties des témoignages-->
-      <section id="bflex">
-        <h2>Avis de nos clients</h2>
-      </section>
-      <section class="info">
-        <h2>information pratique</h2>
-        <p>l'adresse de notre boutique</p>
-        <address>21 place Charles Lepère <br>89000 Auxerre</address>
-        <p>Tel : 03 86 48 22 32</p>
-        <div id="map"></div>
-      </section>
-      
-    </main>
-    <footer>
-<div>
-  
-    <nav class="navfooter1">
-     <h4></h4>
-     <ul>
-         <a href=""><li>FAQ/contactez nous</li></a>
-         <a href=""><li>mentions legales</li></a>
-         <a href=""><li>respect de votre vie privee</li></a>
-         <a href=""><li>OGU et CGV</li></a>
-     </ul>
-
+      <ul>
+        <a href="">
+          <li>contact</li>
+        </a>
+        <a href="">
+          <li>rendez vous</li>
+        </a>
+        <a href="">
+          <li>nous rejoindre</li>
+        </a>
+        <a href="">
+          <li>condition générales</li>
+        </a>
+      </ul>
     </nav>
-</div>
-<nav class=navfooter2>
-  <h4>Infos</h4>
+    <div class="reseau">
+      <a href=""><i class="fa-brands fa-instagram"></i></a>
+      <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+      <a href=""><i class="fa-brands fa-youtube"></i></a>
+    </div>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
 
-  <ul>
-      <a href=""><li>actualités</li></a>
-      <a href=""><li>agenda</li></a>
-      <a href=""><li>dossiers</li></a>
-      <a href=""><li></li></a>
-
-  </ul>
-</nav>
-
-    </footer>
-    <script src="script.js" defer></script>
-  </body>
 </html>
