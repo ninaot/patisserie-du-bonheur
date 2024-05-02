@@ -9,11 +9,7 @@
   text-transform: capitalize;
   transition: 0.6s linear;
 }
-
-main {
-
-}
-
+/*le header*/
 header {
   background-color: white;
   padding-top: 10px;
@@ -73,14 +69,15 @@ header {
   height: 600px;
 
   object-fit: cover;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   opacity: 1;
 }
 .absolute {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 30%;
   transform: translate(-50%, -50%);
+  width: 35%;
 }
 .absolute h1 {
   font-size: 60px;
@@ -90,7 +87,7 @@ header {
   cursor: pointer;
 }
 h1:hover {
-  font-size: 60px;
+  font-size: 70px;
   color: chocolate;
   transform: scale(1.15);
 }
@@ -98,7 +95,7 @@ h1:hover {
   color: hwb(240 4% 94%);
   font-size: 30px;
 
-  margin: 20px 500px 20px 0;
+  margin: 20px 0 20px 0;
 }
 .absolute a {
   border: solid #bebdf7;
@@ -113,14 +110,14 @@ h1:hover {
   transition-duration: 400ms;
 }
 .absolute a:hover {
-  background-color: transparent;
+  background-color: #fdf1e6;
   color: black;
   transform: scale(1.15);
-  font-weight: bold;
+  font-weight:30px;
   font-size: large;
 }
 .titre {
-  margin-right: 600px;
+  
   margin-bottom: 30px;
 }
 #large {
@@ -147,10 +144,13 @@ h1:hover {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
 }
 #large p:hover {
   
-  color: white;
+  color: #e36b6b;
+  font-weight: 800;
+  font-size: large;
 }
 #carte {
   width: 100%;
@@ -158,7 +158,7 @@ h1:hover {
   flex-wrap: wrap;
   gap: 40px;
   margin-bottom: 70px;
-  margin-top: 20px;
+  margin-top: 30px;
 
 }
 #carte h2 {
@@ -252,7 +252,7 @@ h1:hover {
 .carte-service {
   width: 20%;
   margin-left: 50px;
-  background-color: hsl(36, 24%, 92%);
+  background-color:#fdf1e6;
 }
 .carte-service img {
   width: 100%;
@@ -260,6 +260,8 @@ h1:hover {
 
   object-fit: cover;
 }
+
+
 
 #pflex h2 {
   margin-bottom: 50px;
@@ -303,10 +305,14 @@ h1:hover {
 }
 .carte-temoin {
   width: 30%;
-  background-color: #f3f1ee;
+  background-color: #fdf1e6;
   border-radius: 20px;
   padding: 50px;
   box-shadow: 8px 5px;
+}
+
+.carte-temoin .commentaire{
+  margin-bottom: 10px;
 }
 #bflex h2 {
   margin-bottom: 30px;
@@ -375,6 +381,7 @@ footer{
   flex-wrap: wrap;
   justify-content:space-around;
   margin-top: 40px;
+  margin-bottom: 30px;
 }
 footer h4{
   font-weight: 700;

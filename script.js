@@ -106,7 +106,7 @@ function avis(temoignages) {
     <i class="fa-solid fa-quote-left"></i>
     <h3>${element.prenom}</h3>
     <h4>${element.typeExperience}</h4>
-    <p>${element.commentaire}</p>
+    <p class="commentaire">${element.commentaire}</p>
     <p class"avis"> note${etoile(element.note)}</p>
     
 
