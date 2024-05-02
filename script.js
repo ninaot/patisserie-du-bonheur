@@ -94,8 +94,8 @@ function avis(temoignages) {
     <h3>${element.prenom}</h3>
     <h4>${element.typeExperience}</h4>
     <p>${element.commentaire}</p>
-    <p class"avis"> note${element.note}</p>
-    <i class="fa-regular fa-face-smile"></i>
+    <p class"avis"> note${etoile(element.note)}</p>
+    
 
 </div>
     
@@ -105,12 +105,24 @@ function avis(temoignages) {
 }
 
 
-var map = L.map('map').setView([45, 47], 13);
+var map = L.map('map').setView([47.799999, 3.56667],13);
 
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
-L.marker([3 ,34, 2]).addTo(map)
-    .bindPopup('A pretty CSS popup.<br> Easily customizable.')
+L.marker([47.7, 3.56667]).addTo(map)
+    .bindPopup('<h1>21 place Charles Lepère 89000 Auxerre</h1> ')
     .openPopup();
+
+
+    function etoile(note){
+      let chaine =""
+      for(let i=1; i<=note; i++){
+          chaine+="★"
+      }
+      for(let j=0; j<5-note;j++){
+          chaine+="☆"
+      }
+      return chaine 
+  }

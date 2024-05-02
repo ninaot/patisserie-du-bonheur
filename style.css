@@ -1,14 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Josefin+Sans&family=Karla&family=League+Spartan&family=Prata&family=Quicksand&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Josefin+Sans&family=Karla&family=League+Spartan&family=Prata&family=Quicksand&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik&display=swap");
 
 * {
-  font-family:  "Quicksand", sans-serif;
+  font-family: "Quicksand", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
-    text-transform: capitalize;
-    transition: 2s linear;
-
+  text-transform: capitalize;
+  transition: 0.6s linear;
 }
 
 main {
@@ -16,22 +15,20 @@ main {
 }
 
 header {
-  background-color:white;
+  background-color: white;
   padding-top: 10px;
   align-items: center;
   margin: auto;
   justify-content: center;
-  position:sticky;
+  position: sticky;
   top: 0;
-
+  z-index: 100;
 }
 
 .flex {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-
-  
 }
 
 .flex ul {
@@ -40,26 +37,24 @@ header {
   width: 50%;
   margin-left: 200px;
   margin-top: 20px;
-
 }
 .flex ul li {
   list-style-type: none;
   gap: 10px;
- color: black;
+  color: black;
   text-transform: uppercase;
   cursor: pointer;
   margin-right: 80px;
-  
 }
-.flex ul li:hover{
+.flex ul li:hover {
   border: solid 1px black;
   padding: 10px;
 }
 
-.flex i{
+.flex i {
   font-size: large;
   color: black;
- margin-left: 20px;
+  margin-left: 20px;
 }
 .flex img {
   width: 100px;
@@ -71,7 +66,7 @@ header {
   width: 100%;
   height: 600px;
 
-  object-fit:cover;
+  object-fit: cover;
   margin-bottom: 50px;
   opacity: 1;
 }
@@ -82,47 +77,45 @@ header {
   transform: translate(-50%, -50%);
 }
 .absolute h1 {
-  
   font-size: 60px;
   color: hsl(150, 4%, 9%);
   margin-bottom: 10px;
-  
 
   cursor: pointer;
 }
 h1:hover {
   font-size: 60px;
-  color:chocolate;
+  color: chocolate;
   transform: scale(1.15);
 }
 .absolute p {
   color: hwb(240 4% 94%);
   font-size: 30px;
-  
-  margin:20px 500px 20px 0;
+
+  margin: 20px 500px 20px 0;
 }
 .absolute a {
   border: solid #bebdf7;
-
+  display: inline-block;
   padding: 20px;
   border-radius: 25px;
-  background-color:black;
- color:white;
+  background-color: black;
+  color: white;
   font-weight: 800;
-  margin-left: 200px;
-margin-bottom: 100px;
+  
+  margin-bottom: 100px;
   transition-duration: 400ms;
 }
 .absolute a:hover {
-  background-color:transparent
-  ; color:black;
+  background-color: transparent;
+  color: black;
   transform: scale(1.15);
   font-weight: bold;
   font-size: large;
 }
-.titre{
- margin-right: 600px; 
- margin-bottom: 30px;
+.titre {
+  margin-right: 600px;
+  margin-bottom: 30px;
 }
 #large {
   width: 100%;
@@ -134,20 +127,21 @@ margin-bottom: 100px;
 }
 
 #large p {
-  background-color: #babbfb;
+  background-color: hsl(240, 31%, 90%);
   width: 20%;
   padding: 40px 40px;
- 
+
   color: hwb(305 1% 95%);
   font-weight: 800;
   text-align: center;
   border-radius: 100px;
   cursor: pointer;
+  vertical-align: middle;
 }
 #large p:hover {
-  background-color: rgb(191, 167, 196);
-  color:white;
-  font-size: 20px;
+  background-color:#80ed99;
+  color: white;
+  
 }
 #carte {
   width: 100%;
@@ -155,7 +149,7 @@ margin-bottom: 100px;
   flex-wrap: wrap;
   gap: 40px;
   margin-bottom: 70px;
-   margin-top: 20px;
+  margin-top: 20px;
   background-image: url(./assets/Pink\ Pastel\ Cute\ Flower\ Aesthetic\ Background\ Instagram\ Story.png);
 }
 #carte h2 {
@@ -163,11 +157,8 @@ margin-bottom: 100px;
   width: 100%;
   height: 30px;
   text-align: center;
- text-transform: uppercase;
+  text-transform: uppercase;
   font-size: 40px;
-  
-
-
 }
 .card {
   width: 40%;
@@ -176,17 +167,14 @@ margin-bottom: 100px;
   background-color: hsl(0, 17%, 91%);
   border-radius: 25px;
   padding-bottom: 40px;
-  
 }
 .card img {
   width: 100%;
   height: 300px;
-  border-radius: 50px;
- 
+  border-radius: 25px;
+
   object-fit: cover;
   transition: all 0.5s;
- 
-  
 }
 .limite {
   overflow: hidden;
@@ -194,11 +182,10 @@ margin-bottom: 100px;
 }
 .card img:hover {
   transform: scale(1.1);
- 
-  border-radius:25px;
+
+  border-radius: 25px;
 }
 .card h3 {
- 
   margin-top: 10px;
   text-align: center;
   margin-top: 40px;
@@ -206,25 +193,24 @@ margin-bottom: 100px;
   font-weight: bold;
 }
 .card p {
- margin-top: 30px;
+  margin-top: 30px;
   font-size: large;
-margin-bottom: 70px;
-text-align: center;
+  margin-bottom: 70px;
+  text-align: center;
 }
-.cardbtn{
-  
-  color :white;
+.cardbtn {
+  display: inline-block;
+  color: white;
   padding: 8px 16px;
   font-weight: bold;
-  border:1px solid black;
+  border: 1px solid black;
   background-color: black;
   text-transform: uppercase;
   font-size: large;
   font-weight: bolder;
-
 }
-.cardbtn :hover{
-  background-color:transparent;
+.cardbtn :hover {
+  background-color: transparent;
   color: hsl(180, 21%, 6%);
 }
 #pflex {
@@ -233,25 +219,18 @@ text-align: center;
   flex-wrap: wrap;
   justify-content: space-around;
   justify-content: center;
-gap: 30px;
- 
- 
-  
-  
-  
+  gap: 30px;
 }
 .carte-service {
   width: 20%;
   margin-left: 50px;
-  background-color:hsl(36, 24%, 92%);
-
+  background-color: hsl(36, 24%, 92%);
 }
 .carte-service img {
   width: 100%;
   height: 300px;
-  
+
   object-fit: cover;
-  
 }
 
 #pflex h2 {
@@ -259,76 +238,81 @@ gap: 30px;
   width: 100%;
   margin-right: 60px;
   text-align: center;
- text-transform: uppercase;
+  text-transform: uppercase;
   font-size: 50px;
   font-weight: 700;
 }
 .carte-service p {
-
- text-align: center;
-margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
   margin-bottom: 20px;
-  
- 
 }
 .carte-service h3 {
-
   margin-top: 10px;
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
 }
-.carte-service a{
+.carte-service a {
   background-color: black;
   color: aliceblue;
   border-radius: 20px;
   text-transform: uppercase;
   font-weight: 600;
   padding: 8px 15px;
-
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-left: 30px;
 }
-#bflex{
+#bflex {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   justify-content: center;
-margin-top: 50px; 
-gap: 30px;
+  margin-top: 50px;
+  gap: 30px;
 }
-.carte-temoin{
-  width: 30%; background-color: #f3f1ee;
+.carte-temoin {
+  width: 30%;
+  background-color: #f3f1ee;
   border-radius: 20px;
   padding: 50px;
   box-shadow: 8px 5px;
- 
 }
-#bflex h2{margin-bottom: 30px;
+#bflex h2 {
+  margin-bottom: 30px;
   width: 100%;
   height: 30px;
   text-align: center;
- text-transform: uppercase;
+  text-transform: uppercase;
   font-size: 40px;
- 
-
 }
-.carte-temoin h3{
+.carte-temoin h3 {
   text-align: center;
   font-size: large;
   margin-bottom: 10px;
 }
-.carte-temoin i{
-font-size: 30px;
-  
+.carte-temoin i {
+  font-size: 30px;
 }
-.carte-temoin h4{
-  font-size:30px ;
+.carte-temoin h4 {
+  font-size: 30px;
   margin-bottom: 30px;
   margin-top: 20px;
 }
-#map{
+#map {
   height: 300px;
-  margin-top: 190px;
+  margin-top: 80px;
   margin-left: 50%;
   margin-right: 30px;
+}
+.info {
+  margin-top: 50px;
+}
+.info h2 {
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 40px;
 }
