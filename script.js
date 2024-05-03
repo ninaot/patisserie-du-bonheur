@@ -85,7 +85,9 @@ function cours(services) {
   let traiteur = "";
   services.forEach((gateau) => {
     traiteur += `
-    <div class="carte-service"  data-aos="zoom-in-up">
+    <div class="carte-service"  data-aos="flip-left"
+    data-aos-easing="ease-out-cubic"
+    data-aos-duration="2000">
     <img src="${gateau.image}" alt="">
     <h3>${gateau.nom}</h3>
        <p>${gateau.description}</p>
@@ -126,7 +128,7 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
 
 L.marker([47.7, 3.56667])
   .addTo(map)
-  .bindPopup("<h1>21 place Charles Lepère 89000 Auxerre</h1> ")
+  .bindPopup("<h3>21 place Charles Lepère 89000 Auxerre</h3> ")
   .openPopup();
 
 function etoile(note) {
