@@ -109,7 +109,7 @@ function avis(temoignages) {
     <h3>${element.prenom}</h3>
     <h4>${element.typeExperience}</h4>
     <p class="commentaire">${element.commentaire}</p>
-    <p class"avis"> note${etoile(element.note)}</p>
+    <p class"avis"> ${etoile(element.note)}</p>
     
 
 </div>

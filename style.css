@@ -47,6 +47,7 @@ header {
   text-transform: uppercase;
   cursor: pointer;
   margin-right: 80px;
+  font-weight: 40px;
 }
 .flex ul li:hover {
   border: solid 1px black;
@@ -59,7 +60,7 @@ header {
   margin-left: 20px;
 }
 .flex img {
-  width: 100px;
+  width: 80px;
   margin-bottom: 20px;
 }
 #user {
@@ -207,9 +208,9 @@ h1:hover {
 }
 .card h3 {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 40px;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight:20px;
 }
 .card p {
   margin-top: 30px;
@@ -252,7 +253,7 @@ h1:hover {
 }
 
 #pflex h2 {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   width: 100%;
   margin-right: 60px;
   text-align: center;
@@ -262,11 +263,12 @@ h1:hover {
 }
 .carte-service p {
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding: 10px;
 }
 .carte-service h3 {
-  margin-top: 30px;
+  margin-top: 20px;
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
@@ -280,7 +282,7 @@ h1:hover {
   padding: 8px 15px;
   display: inline-block;
   margin-bottom: 10px;
-  margin-left: 30px;
+  margin-left: 70px;
 }
 #bflex {
   width: 100%;
@@ -297,8 +299,8 @@ h1:hover {
   border-radius: 20px;
   padding: 50px;
   box-shadow: 8px 5px;
-  margin-bottom: 40px;
-  margin-top: 60px;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 .carte-temoin .commentaire {
@@ -351,14 +353,18 @@ h1:hover {
   margin: 10px 0 50px 200px;
   font-weight: 800;
   width: 600px;
-
   width: 400px;
   margin-right: 60px;
-
   padding: 100%px;
 }
+
 .horaire {
   margin-top: 20px;
+}
+.horaire p{
+  margin-bottom: 30px;
+
+
 }
 .adresse h3 {
   font-size: 30px;
